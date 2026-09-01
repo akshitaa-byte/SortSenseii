@@ -547,8 +547,8 @@ input[type="range"] {
 }
 
 .race-bars-container {
-  height: 220px;
-  padding: 6px 2px;
+  height: 260px;
+  padding: 6px 2px 0;
   gap: 1px;
   width: 100%;
   max-width: 100%;
@@ -557,13 +557,17 @@ input[type="range"] {
 }
 
 .race-bars-container .bar-wrapper {
-  max-width: 24px;
+  max-width: none;
   min-width: 0;
 }
 
 .race-bars-container .bar-label {
   font-size: clamp(0.35rem, 0.75vw, 0.55rem);
   margin-top: 2px;
+}
+
+.race-label-hidden {
+  display: none;
 }
 
 .race-metrics {
@@ -1123,7 +1127,7 @@ input[type="range"] {
   }
 
   .race-lanes-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 
   .hero-banner {

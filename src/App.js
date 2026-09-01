@@ -846,6 +846,13 @@ function App() {
                             barColor = colors.compare;
                           }
 
+                          const labelClass =
+                            lane.array.length > 20
+                              ? "bar-label race-label-hidden"
+                              : lane.array.length > 12
+                              ? "bar-label vertical-label"
+                              : "bar-label";
+
                           return (
                             <div key={index} className="bar-wrapper">
                               <div
@@ -856,7 +863,7 @@ function App() {
                                   boxShadow: theme === "night" ? `0 0 8px ${barColor}88` : "none",
                                 }}
                               ></div>
-                              <span className={`bar-label ${lane.array.length > 15 ? "vertical-label" : ""}`}>
+                              <span className={labelClass}>
                                 {value}
                               </span>
                             </div>
