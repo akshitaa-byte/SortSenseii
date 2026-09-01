@@ -10,7 +10,7 @@
 
 ## 🎬 Live Race Mode Demo
 
-![SortSenseii Race Mode Live Demo](public/racemode.gif)
+![SortSenseii Race Mode Live Demo](public/racemode2.gif)
 
 *Watch 2 to 5 sorting algorithms race head-to-head on identical arrays with real-time rank placement tracking.*
 
