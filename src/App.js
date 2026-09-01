@@ -757,7 +757,7 @@ function App() {
                             boxShadow: theme === "night" ? `0 0 10px ${barColor}88` : "none",
                           }}
                         ></div>
-                        {arraySingle.length <= 30 && <span className="bar-label">{value}</span>}
+                        <span className="bar-label">{value}</span>
                       </div>
                     );
                   })}
@@ -854,6 +854,7 @@ function App() {
                                   boxShadow: theme === "night" ? `0 0 8px ${barColor}88` : "none",
                                 }}
                               ></div>
+                              <span className="bar-label">{value}</span>
                             </div>
                           );
                         })}
