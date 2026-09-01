@@ -4,10 +4,13 @@
   padding: 0;
 }
 
-body {
+html, body {
   font-family: 'Space Grotesk', 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.5;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+  background-color: #0F081D;
 }
 
 /* =========================================================
@@ -19,6 +22,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -198,16 +203,21 @@ body {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
 }
 
 .panel {
   border-radius: 12px;
   padding: 22px;
+  min-width: 0;
 }
 
 .controls-panel {
   flex: 1 1 290px;
   max-width: 340px;
+  min-width: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -225,6 +235,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  min-width: 0;
 }
 
 .control-group label {
@@ -240,11 +251,13 @@ body {
   padding: 14px;
   border-radius: 8px;
   border: 1px solid;
+  min-width: 0;
 }
 
 select,
 input[type="text"] {
   width: 100%;
+  min-width: 0;
   padding: 10px 12px;
   border-radius: 6px;
   border: 1px solid;
@@ -281,6 +294,13 @@ input[type="range"] {
 .input-row {
   display: flex;
   gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.input-row input {
+  min-width: 0;
+  flex: 1;
 }
 
 .btn {
@@ -321,7 +341,9 @@ input[type="range"] {
 }
 
 .center-panel {
-  flex: 3 1 600px;
+  flex: 3 1 300px;
+  min-width: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1031,24 +1053,101 @@ input[type="range"] {
 @media (max-width: 900px) {
   .top-nav {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 12px;
     text-align: center;
-    padding: 16px 20px;
+    padding: 14px 16px;
   }
 
   .nav-links {
     justify-content: center;
+    gap: 10px;
+  }
+
+  .brand-title {
+    font-size: 1.8rem;
+  }
+
+  .main-layout {
+    flex-direction: column;
+    gap: 16px;
   }
 
   .controls-panel {
     max-width: 100%;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .center-panel {
+    width: 100%;
+    min-width: 0;
   }
 
   .race-lanes-grid {
     grid-template-columns: 1fr;
   }
 
+  .hero-banner {
+    padding: 24px 16px 16px;
+  }
+
   .hero-heading {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+
+  .hero-subtext {
+    font-size: 0.95rem;
+  }
+
+  .main-studio {
+    padding: 16px 12px 40px;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  .bars-container {
+    height: 280px;
+    padding: 6px;
+    gap: 1.5px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-title {
+    font-size: 1.5rem;
+  }
+
+  .kanji-sign {
+    font-size: 1rem;
+  }
+
+  .hero-heading {
+    font-size: 1.8rem;
+  }
+
+  .bars-container {
+    height: 240px;
+    padding: 4px;
+    gap: 1px;
+  }
+
+  .bar-label {
+    display: none;
+  }
+
+  .studio-mode-selector {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .studio-label {
+    font-size: 0.75rem;
   }
 }
