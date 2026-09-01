@@ -8,9 +8,11 @@
 
 ---
 
-## 🎬 Race Mode Demo
+## 🎬 Race Mode Demo & Interface
 
-![SortSenseii Race Mode Demo](docs/demo.gif)
+<video src="public/gif.mp4" autoplay loop muted playsinline width="100%"></video>
+
+![SortSenseii Race Mode Screenshot](public/ss.jpeg)
 
 *Watch 2 to 5 sorting algorithms race head-to-head on identical arrays with real-time rank placement tracking.*
 
