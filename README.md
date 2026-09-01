@@ -8,19 +8,21 @@
 
 ---
 
-## 🎬 Race Mode Demo & Interface Screenshots
+## 🎬 Live Race Mode Demo
 
-[🎥 **Click here to watch the full Race Mode Video Demo (`gif.mp4`)**](public/gif.mp4)
+![SortSenseii Race Mode Live Demo](public/demo.gif)
 
-### 📸 Screenshots
+*Watch 2 to 5 sorting algorithms race head-to-head on identical arrays with real-time rank placement tracking.*
+
+---
+
+## 📸 Interface Screenshots
 
 ![SortSenseii Race Mode](public/ss.jpeg)
 
 ![SortSenseii Single Visualizer](public/ss2.jpeg)
 
 ![SortSenseii Mobile & Day Theme](public/ss3.jpeg)
-
-*Watch 2 to 5 sorting algorithms race head-to-head on identical arrays with real-time rank placement tracking.*
 
 ---
 
